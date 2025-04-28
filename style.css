@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+}
+
+.message {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: fit-content;
+    border: 2px solid red;
+    background: blue;
+    color: white;
+}
+
+.player {
+    background: rgb(68, 38, 214);
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* background: black; */
+    background: white;
+    width: min(80vh,50vw);
+    min-width: 200px;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45%;
+    position: relative;
+}
+
+.box {
+    width: 30%;
+    margin: 1%;
+    aspect-ratio: 1/1;
+    /* background: rgb(211, 211, 45); */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    color: white;
+}
+
+
+.winner {
+    background: rgba(172, 255, 47, 0.648);
+    color: white;
+    position: absolute;
+    width: min(80vh,50vw);
+    min-width: 200px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: min(10vw,50px);
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    /* animation-name: ; */
+}
+
+.restart{
+    padding: 10px;
+    border: 2px solid white;
+    background: skyblue;
+}
+
+@keyframes popdown {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
